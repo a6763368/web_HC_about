@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+
+<body id="top">
     <!-- date-st-target 要前往元素的ID名稱 -->
     <!-- date-st-duration 捲動所花的時間 (毫秒) -->
-   <nav>
-       <a href="" date-st-target="area1" date-st-duration="1000">連結1</a>
-       <a href="" date-st-target="area2" date-st-duration="2000">連結2</a>
-       <a href="" date-st-target="area3" date-st-duration="3000">連結3</a>
-    </nav> 
+    <!-- date-st-offset 位移的大小 -->
+    <nav>
+        <a href="" date-st-target="area1" date-st-duration="700">連結1</a>
+        <a href="" date-st-target="area2" date-st-duration="800" date-st-offset="-100">連結2</a>
+        <a href="" date-st-target="area3" date-st-duration="900" date-st-offset="-100">連結3</a>
+    </nav>
 
-   <section id="area1">區塊1</section>
-   <section id="area2">區塊2</section>
-   <section id="area3">區塊3</section>
+    <section id="area1">區塊1</section>
+    <section id="area2">區塊2</section>
+    <section id="area3">區塊3</section>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="./main.js"></script>
+    <!-- date-st-top 箭頭要出線的高度 -->
+    <!-- date-st-time 特效的持續時間 -->
+    <a id="arrow" date-st-target="top" date-st-duration="800" date-st-top="300" date-st-time="1000"></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>

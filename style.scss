@@ -33,3 +33,15 @@ section {
         background: pink;
     }
 }
+
+// 箭頭樣式
+#arrow {
+    background-image: url(./arrow.png);
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
